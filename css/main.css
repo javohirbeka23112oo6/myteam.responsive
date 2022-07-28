@@ -1,0 +1,137 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Livvic", sans-serif;
+  font-family: "Roboto", sans-serif;
+  display: flex;
+  flex-direction: column;
+}
+
+.container {
+  width: 1140px;
+  padding: 0 15px;
+  margin: 0 auto;
+}
+
+.card__wrapper {
+  padding: 140px;
+  background-color: #004047;
+  background-image: url(../../img/Group\ 8.svg), url(../../img/Group\ 8\ \(1\).svg);
+  background-repeat: no-repeat;
+  background-position: left top, bottom right;
+}
+
+.card-title {
+  text-align: center;
+  color: #FFFFFF;
+  font-size: 48px;
+}
+
+.card__list {
+  list-style-type: none;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.card__list-item {
+  overflow: hidden;
+  position: relative;
+  margin-top: 76px;
+  width: 350px;
+  height: 281px;
+}
+.card__list-item div {
+  text-align: center;
+}
+
+.list__item-main {
+  background-color: #012F34;
+  width: 100%;
+  height: 253px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 32px;
+}
+.list__item-main img {
+  width: 96px;
+  height: 96px;
+  border-radius: 50%;
+}
+.list__item-main span {
+  margin-top: 16px;
+  color: #79c8c7;
+  font-weight: bold;
+}
+.list__item-main p {
+  color: white;
+}
+
+.item__plus {
+  width: 56px;
+  height: 56px;
+  background-color: #F67E7E;
+  border: none;
+  border-radius: 50%;
+  font-size: 29px;
+  color: #79c8c7;
+  margin: 0 auto;
+  margin-top: -28px;
+  display: block;
+}
+
+.list__item-hover {
+  width: 100%;
+  height: 253px;
+  padding: 56px;
+  position: absolute;
+  top: 281px;
+  background-color: #002529;
+  transform: scale(0.5);
+}
+.list__item-hover span {
+  color: #79c8c7;
+  font-weight: bold;
+}
+.list__item-hover p {
+  color: white;
+  font-weight: bold;
+}
+.list__item-hover .icons {
+  margin-top: 20px;
+}
+
+.card__list-item:hover .list__item-hover {
+  top: 0;
+  transition: all 0.5s ease-in;
+  transform: scale(1);
+}
+
+.card__list-item:hover .item__plus {
+  transition: all 0.5s ease-in;
+  position: relative;
+  z-index: 5;
+  background-color: #79c8c7;
+  color: black;
+  transform: rotate(180deg);
+}
+
+@media (max-width: 1110px) {
+  .card__wrapper {
+    width: 100%;
+    padding: 0;
+  }
+  .container {
+    width: 90%;
+  }
+}
+@media (max-width: 838px) {
+  .card__list {
+    justify-content: space-around;
+  }
+}/*# sourceMappingURL=main.css.map */
